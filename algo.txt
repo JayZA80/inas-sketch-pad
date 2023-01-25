@@ -1,0 +1,13 @@
+Declare a counter variable
+Declare a variable to keep track of if we want to continue repeating code
+Declare a function (x) with a parameter as an event (e)
+Record the target element that triggered the event
+Add/Remove a class from the target element
+
+While we want to repeat code:
+Check if the counter is at 16
+Say we don't want to repeat code
+If the counter is not at 16, create a div element
+Add the div element to the parent container
+Listen for when the div element is clicked, if it's clicked run function x
+Increment the counter 
