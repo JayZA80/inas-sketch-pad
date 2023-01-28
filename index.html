@@ -8,7 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="sketchPad"></div>
+    <div class="mainContainer">
+        <div class="header">
+            <h1>Ina's Sketch Pad</h1>
+            <img src="images/takodachi-ina.gif" alt="takodachi-gif">
+        </div>
+        <div class="content">
+            <div class="menuContainer">
+                <div class="menu">
+                    <label for="drawTool">Tool:</label>
+                    <select name="drawTool" id="drawTool">
+                        <option value="Pen">Pen</option>
+                        <option value="Eraser">Eraser</option>
+                    </select>
+                    <label for="canvasSize">Canvas Size:</label>
+                    <select name="canvasSize" id="canvasSize">
+                        <option value="16">16 x 16</option>
+                        <option value="32">32 x 32</option>
+                        <option value="48">48 x 48</option>
+                        <option value="64">64 x 64</option>
+                    </select>
+                 </div>
+            </div>
+            <div id="sketchPad"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,14 +1,89 @@
+:root {
+    --section: rgb(172, 146, 197);
+    --border: rgb(201, 177, 40);
+}
+
 body {
+    background-color: var(--section);
     margin: 0;
 }
 
+.header {
+    align-items: center;
+    background-color: rgb(93, 66, 117);
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header img {
+    height: 70%;
+}
+
+.mainContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 80%;
+}
+
+.menuContainer {
+    align-items: center;
+    display: flex;
+}
+
+.menu {
+    border: 5px var(--border) solid;
+    border-radius: 5px;
+    height: 80%;
+    padding: 1.5rem;
+}
+
+.menu * {
+    display: block;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
 #sketchPad {
-    border: 2px black solid;
+    background-color: white;
+    border: 10px var(--border) solid;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
     height: 600px;
     width: 600px;
+}
+
+.size16 {
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.size32 {
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+}
+
+.size48 {
+    grid-template-columns: repeat(48, 1fr);
+    grid-template-rows: repeat(48, 1fr);
+}
+
+.size64 {
+    grid-template-columns: repeat(64, 1fr);
+    grid-template-rows: repeat(64, 1fr);
 }
 
 #sketchPad div:hover {
