@@ -48,6 +48,13 @@ const createPad = function(num) {
             let div = document.createElement('div');
             div.classList.add('sketchDiv');
             div.style.draggable = 'false';
+            div.addEventListener('click', e => {
+                if (tool === 'Pen') {
+                    draw(e.target);
+                } else if (tool === 'Eraser') {
+                    erase(e.target);
+                }
+            });
             div.addEventListener('mouseenter', e => {
                 if (drawing === true && tool === 'Pen') {
                     draw(e.target);

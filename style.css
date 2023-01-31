@@ -1,11 +1,32 @@
+@font-face {
+    font-family: Selawik;
+    src: url(fonts/selawik/selawk.ttf);
+}
+
 :root {
-    --section: rgb(172, 146, 197);
-    --border: rgb(201, 177, 40);
+    --body: rgb(172, 146, 197);
+    --accent: rgb(201, 177, 40);
 }
 
 body {
-    background-color: var(--section);
+    background-color: var(--body);
+    color: #222;
+    font-family: Selawik;
     margin: 0;
+}
+
+select, button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+select:hover, button:hover {
+    background-color: #ddd;
+}
+
+label {
+    font-size: 1.5rem;
 }
 
 .header {
@@ -19,6 +40,7 @@ body {
 }
 
 .header h1 {
+    color: var(--accent);
     margin: 0;
 }
 
@@ -46,21 +68,26 @@ body {
 }
 
 .menu {
-    border: 5px var(--border) solid;
-    border-radius: 5px;
+    background-color: rgb(206, 184, 226);;
+    border-radius: 10px;
     height: 80%;
     padding: 1.5rem;
 }
 
 .menu * {
+    color: #222;
     display: block;
     font-size: 1.5rem;
     margin: 2rem;
 }
 
+.menu button {
+    margin-top: 4rem;
+}
+
 #sketchPad {
     background-color: white;
-    border: 10px var(--border) solid;
+    border: 10px var(--accent) solid;
     display: grid;
     height: 600px;
     width: 600px;
