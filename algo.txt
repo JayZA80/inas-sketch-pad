@@ -1,5 +1,9 @@
 Declare a counter variable
 Declare a variable to keep track of if we want to continue repeating code
+Keep track of the tool selection element
+Keep track of the canvas size selection element
+Declare a variable to keep track of what tool is being used (Pen by default)
+
 Declare a variable that keeps track if user is drawing or not
 When mouse clicker is down, the user is drawing
 When mouse clicker is up, the user isn't drawing
@@ -7,15 +11,42 @@ When mouse clicker is up, the user isn't drawing
 (Drawing Function)
 Declare a function (x) with a parameter as an event (e)
 Record the target element that triggered the event
-Add/Remove a class from the target element
+Add a class from the target element
 
+(Erase Function)
+Declare a function (x) with a parameter as an event (e)
+Record the target element that triggered the event
+Remove a class from the target element
+
+(Changing tool being used)
+Listen for changes to the tool selection element
+Change the tool variable value to the value of the selected option
+
+(Changing canvas size)
+Listen for changes to the canvas size selection element
+When the selected option changes, run a function to increase or decrease elements in the sketchPad
+
+(Create drawing pad function)
 Declare a function to create sketch pad with a number as a parameter
 Remove all classes from sketch pad
 Add a class that corresponds to given number to sketch pad
+
+If the counter is the same number as the given number * itself:
+Stop running this function
+
+Also, if the counter is higher than the given number * itself:
+Remove a child element
+Decrement the counter until it matches the given number * itself
+
+Else:
 While we want to repeat code:
 Check if the counter is at given number
 Say we don't want to repeat code
-If the counter is not at 16, create a div element
+If the counter is not at given number, create a div element
 Add the div element to the parent container
 Listen for when the div element is clicked, if it's clicked run function x
 Increment the counter 
+
+(Clearing the sketch pad)
+Get a list of all the elements inside the sketch pad
+For each element, use a function to remove the black color from it
